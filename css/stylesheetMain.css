@@ -1,0 +1,139 @@
+* {
+  font-family: Arial, sans-serif;
+  line-height: 24px;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header {
+  padding: 0%;
+  padding-top: 314.5px;
+  padding-bottom: 314.5px;
+  text-align: center;
+  vertical-align: middle;
+  background: #fff url("Landscape-Color2.png") no-repeat scroll center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+header h1 {
+  font-size: 48px;
+}
+
+nav {
+  overflow: hidden;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav a.backTop {
+  float: right;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+div#mainContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex: 20%;
+  width: 100%;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+aside img {
+  width: 100%;
+  object-fit: cover;
+  height: 64px;
+}
+
+aside ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+aside a {
+  color: black;
+}
+
+aside a:hover {
+  color: #444;
+}
+
+article {
+  flex: 80%;
+  background-color: #eee;
+  padding: 20px;
+  width: 100%;
+}
+
+section#map {
+  float: right;
+  margin: 16px;
+  padding: 12px;
+}
+
+section#map img {
+  border: 3px solid black;
+  width: 100%;
+}
+
+section#sources {
+  overflow: auto;
+}
+
+#map ul {
+  list-style-type: none;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  aside {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    position: static;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  nav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background: black;
+  width: 100%;
+}
+
+footer a {
+	color: white;
+}
+
+footer a:hover {
+  color: #ddd;
+}
