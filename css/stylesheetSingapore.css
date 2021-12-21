@@ -104,7 +104,7 @@ section#sources {
 }
 
 @media screen and (max-width: 700px) {
-  section#singapore iframe {
+  section#singapore video {
     width: 100%;
 	height: auto;
 	padding: 0
