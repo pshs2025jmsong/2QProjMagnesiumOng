@@ -46,7 +46,9 @@ nav a.backTop {
 }
 
 nav a:hover {
-  color: #ddd;
+  color: #000;
+  background-color: #ddd;
+  transition: all 0.2s ease-in-out;
 }
 
 div#mainContent {
@@ -67,19 +69,6 @@ aside img {
   height: 64px;
 }
 
-aside ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-aside a {
-  color: black;
-}
-
-aside a:hover {
-  color: #444;
-}
-
 article {
   flex: 80%;
   background-color: #eee;
@@ -90,10 +79,6 @@ article {
 section#singapore {
   width: 70%;
   margin: 16px 0;
-}
-
-section#sources {
-  overflow: auto;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -139,10 +124,39 @@ footer {
   width: 100%;
 }
 
+footer .sprite {
+  float: left;
+}
+
+footer #email {
+  background: url('icons.png') no-repeat -10px -90px;
+  width: 34px;
+  height: 35px;	
+}
+
+footer #email:hover {
+  background: url('icons.png') no-repeat -10px -15px;
+  width: 34px;
+  height: 35px;	
+}
+
+footer #github {
+  background: url('icons.png') no-repeat -411px -90px;
+  width: 34px;
+  height: 35px;
+}
+
+footer #github:hover {
+  background: url('icons.png') no-repeat -411px -15px;
+  width: 34px;
+  height: 35px;
+}
+
 footer a {
-	color: white;
+  color: #fff;
 }
 
 footer a:hover {
+  transition: all 0.2s ease-in-out;
   color: #ddd;
 }

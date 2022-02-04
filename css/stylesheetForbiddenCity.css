@@ -21,6 +21,10 @@ header h1 {
   font-size: 48px;
 }
 
+header a {
+  color: white;
+}
+
 nav {
   overflow: hidden;
   background-color: black;
@@ -35,6 +39,10 @@ nav a {
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
+}
+
+nav a.backTop {
+  float: right;
 }
 
 nav a:hover {
@@ -68,19 +76,32 @@ article {
   width: 100%;
 }
 
-section#map {
-  float: right;
+section#forbiddencity {
   margin: 16px;
   padding: 12px;
 }
 
-section#map img {
+section#forbiddencity img {
+  border: 3px solid black;
+  width: 80%;
+}
+
+section#structure {
+  float: left;
+  width: 20%;
+  margin: 0px 12px;
+}
+
+section#structure img {
   border: 3px solid black;
   width: 100%;
 }
 
-#map ul {
-  list-style-type: none;
+section#structure img:hover {
+  -ms-transform: scale(2, 2);
+  -webkit-transform: scale(2, 2);
+  transform: scale(2, 2);
+  transition: all 0.2s ease-in-out 0.5s;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -101,6 +122,27 @@ section#map img {
   nav a {
     float: none;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section#forbiddencity img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section#structure {
+	float: none;
+    width: 80%;
+	margin: auto;
+  }
+  
+  section#structure img:hover {
+	-ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    transition: all 0s ease-in-out 0s;
   }
 }
 
